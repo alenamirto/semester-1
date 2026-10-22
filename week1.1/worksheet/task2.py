@@ -13,7 +13,7 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 try:
     amount_saved_monthly=int(input("How much money would you like to save every month?"))
 except:
-    print("Invalid Amount")
+    print("Invalid amount")
     exit()
 
 
@@ -21,10 +21,12 @@ except:
 # print this out for the user with a suitable message.
 
 amount_saved_yearly=amount_saved_monthly*12
-print(f"You will save {amount_saved_yearly} every year")
+a=round(amount_saved_yearly,2)
+print(f"You will save £{a:.2f} every year")
 
 amount_saved_with_interest=amount_saved_yearly*0.008+amount_saved_yearly
-print(f"You will save £{amount_saved_with_interest} (with interest) by the end of the year")
+b=round(amount_saved_with_interest,2)
+print(f"You will save £{b:.2f} (with interest) by the end of the year")
 
 
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
