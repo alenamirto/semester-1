@@ -6,6 +6,6 @@ Hint: consider both positive and negative integers
 
 | list data | Values |
 | --- | --- |
-| Empty list | |
-| Single integer list  | |
-| Multiple integer list |  |
+| Empty list | [], 
+| Single integer list  |[9],[-9]
+| Multiple integer list | [-1,1],[-1,-2,1]
