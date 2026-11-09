@@ -16,3 +16,4 @@ def process_data(data):
         return None
 
     return sum(data)
+
