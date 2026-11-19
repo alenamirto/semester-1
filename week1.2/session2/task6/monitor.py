@@ -22,3 +22,9 @@ else:
 
 #operation status
 if operational_status == 1:
+    if temperature > 80 or pressure > 100:
+        print("the machine is running in unsafe conditions, shut it down!!")
+    else:
+        print("the machine is runnning normally")
+elif operational_status == 0:
+    print("the machine is stopped and no immediate action is needed") 
