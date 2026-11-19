@@ -16,5 +16,12 @@ shopping.remove("eggs")
 print(shopping)
 
 # Replace bananas with grapes
+shopping = ["grapes" if item == "bananas" else item for item in shopping]
+print(shopping)
 
 # Add yoghurt, just after milk
+for item in range(len(shopping)):
+    if shopping[item]=="milk":
+        shopping.insert(item+1,"yoghurt")
+        break
+print(shopping)
