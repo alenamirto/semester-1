@@ -11,6 +11,15 @@
 # function implementation
 
 def mystery_func(string):
+    """ 
+    Returns how many upper and lower characters are in the string
+
+    Args: string
+
+    Returns: tuple of integers reflecting number of upper and lower chars
+    in the string
+
+    """
     upper = 0
     lower = 0
 
