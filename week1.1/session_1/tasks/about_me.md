@@ -37,7 +37,7 @@ here's a recipe for beef stew:
 | bell peppers| 2        | 
 | diced beef  | 250g     | 
 | beef liver  | 250 g    | 
-| tomatos     | 3        | 
+| tomatoes    | 3        | 
 | soy sauce   | 1 tbsp   | 
 | garlic      | 5 cloves | 
 | onion       | 1        | 
