@@ -2,6 +2,15 @@
 
 
 # Prompt the user for their name, age, and favorite colour.
+name = str(input("what's your name"))
+age = str(input("what's your age"))
+fav_colour = str(input("what's your favourite colour"))
+
+with open("/workspaces/semester-1/week1.3/session2/task3/1_user_info/user_info.txt","w") as x:
+    x.write(f"{name}\n{age}\n{fav_colour}")
+    
+with open("/workspaces/semester-1/week1.3/session2/task3/1_user_info/user_info.txt", "r") as x:
+    print(x.read())
 
 # Open a file called 'user_info.txt' for reading
 

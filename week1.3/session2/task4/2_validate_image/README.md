@@ -14,7 +14,7 @@ We want to write a program to check whether the image width, height and the pixe
     - For each pixel, check if the pixel value is between 0 and the maximum gray value inclusive.
     - Check if the widths and heights are the same as specified.
 
-4. Print the final verdit.
+4. Print the final verdict.
 
     - Print `Valid image` if the widths, the heights are the same, and all pixel values between 0 and the maximum gray value inclusive.
     - Print `Invalid width` if the widths are different.

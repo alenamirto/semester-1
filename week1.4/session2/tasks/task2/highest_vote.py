@@ -16,7 +16,33 @@ def most_frequent_string(votes):
         and int is the count of its occurences
         - None, None: if votes is empty.
     """
+    if len(votes) == 0:
+        return None
 
+    element_to_compare=votes[0]
+    count=1
+    highest_count=1
+    highest_element=""
+
+    unique_values={}
+
+    for element in votes:
+        if element not in unique_values:
+            unique_values.update({element:0})
+
+    for element in range(1,len(votes)): # this only checks consecutive values
+        a = votes[element]
+        if a == element_to_compare:
+            unique_values[a] += 1
+            if unique_values[a] > highest_count:
+                highest_count = count
+                highest_element = a
+        else:
+            unique_values[a] += 1
+            element_to_compare = a
+
+    return(highest_count,highest_element)
+        
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
