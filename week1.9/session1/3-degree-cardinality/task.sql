@@ -8,7 +8,23 @@
 .tables
 
 -- To see the attributes belonging to each table
-.schema customers
+.schema customers 
+-- degree is num of attributes
 
 -- And to see a count of the total number of tuples
 SELECT COUNT(*) as Cardinality FROM customers; 
+-- 7, 180 (degree, cardinality)
+----------------------------------------------------
+.schema reviews
+SELECT COUNT(*) as Cardinality FROM reviews; 
+-- 4, 412
+
+.schema restaurants
+SELECT COUNT(*) as Cardinality FROM restaurants; 
+-- 5, 30
+
+.schema menu_items
+SELECT COUNT(*) as Cardinality FROM menu_items; 
+-- 5, 270
+
+-- week1.9/session1/3-degree-cardinality/task.sql
